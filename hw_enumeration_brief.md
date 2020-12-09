@@ -34,3 +34,8 @@ Given a word, phrase or sentence you should be able to determine whether or not 
 An anagram is a word formed by rearranging the letters of another word. Listen is an anagram of silent, for example.
 
 Given a word and an array of other words you should be able to `filter` the array, leaving only the anagrams of the word in question in the array.
+
+
+## REMEMBER: Run 'npm install' in each of the project directories - wherever you find package.json. Do this in terminal.
+
+To run the test, use 'npm test' in each project library.
