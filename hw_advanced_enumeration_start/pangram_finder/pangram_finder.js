@@ -6,9 +6,11 @@ const PangramFinder = function (phrase) {
 PangramFinder.prototype.isPangram = function () {
 
   // Remove spaces from the phrase
+  // By changing the order of the comparisons (checking alphabet letters in the
+  // the phrase), I found that I didn't need to remove the spaces at all...
   const spacesRemoved = this.phrase.filter(letter => letter !== ' ');
   
-  // Convert the letters to lower case
+  // Convert the letters to lower case - this WAS required though...
   const lowerCased = spacesRemoved.map((letter) => {
     return letter.toLowerCase();   
   });
